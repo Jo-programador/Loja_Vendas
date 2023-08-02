@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/cadastro/usuario.css">
+    <title>Atualizar</title>
+    <script src="../js/"></script>
+</head>
+
+<body>
+    <header>
+        <h2>Atualizar Dados</h2>
+    </header>
+
+    <main>
+        <form action="atualizar.html" method="post" class="form-control">
+            <div class="div-id">
+                <label for="ID">
+                    ID
+                </label>
+                <input readonly type="id" name="id" class="form-control" id="id" required placeholder="Id do Usuario" />
+            </div> <!-- DIV-ID -->
+            <div class="div-nome">
+                <label for="Nome">
+                    Nome
+                </label>
+                </label>
+                <input type="nome" name="nome" class="form-control" id="nome" required placeholder="Inserir seu nome" />
+            </div> <!-- DIV-NOME -->
+            <div class="div-cpf">
+                <label for="CPF">
+                    CPF
+                </label>
+                <input t ype="cpf" name="cpf" class="form-control" id="cpf" required placeholder="Iserir seu cpf" />
+            </div> <!-- DIV-CPF -->
+            <div class="div-email">
+                <label for="Email" required>
+                    Email
+                </label>
+                <input type="email" name="email" class="form-control" id="email" required
+                    placeholder="Inserir se email" />
+            </div> <!-- DIV-EMAIL -->
+            <div class="div-telefone">
+                <label for="Telefone">
+                    Telefone
+                </label>
+                <input type="telefone" name="telefone" class="form-control" id="telefone" required
+                    placeholder="Inserir seu telefone" />
+            </div> <!-- DIV-TELEFONE -->
+            <div class="div-endereco">
+                <label for="Endereco">
+                    Endereco
+                </label>
+                <input type="endereco" name="endereco" class="form-control" id="endereco" required
+                    placeholder="Inserir seu endereco" />
+            </div> <!-- DIV-ENDERECO -->
+            <div class="div-cidade">
+                <label for="Cidade">
+                    Cidade
+                </label>
+                <input type="cidade" name="cidade" class="form-control" id="cidade" required
+                    placeholder="Inserir seu cidade" />
+            </div> <!-- DIV-CIDADE -->
+            <div class="div-uf">
+                <label for="UF">
+                    UF
+                </label>
+                <input type="uf" name="uf" class="form-control" id="uf" required placeholder="Inserir seu UF" />
+            </div> <!-- DIV-UF -->
+            <div class="div-cep">
+                <label for="Cep">
+                    CEP
+                </label>
+                <input type="cep" name="cep" class="form-control" id="cep" required placeholder="Inserir seu Cep" />
+            </div> <!-- DIV-CEP -->
+
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" onclick="updateCliente()"> Atualizar </button>
+            </div>
+        </form> <!-- FORM-CONTROL -->
+    </main>
+</body>
+
+</html>

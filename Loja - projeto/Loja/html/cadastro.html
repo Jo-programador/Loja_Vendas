@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/cadastro/usuario.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/cadastro.js"></script>
+</head>
+
+<body>
+    
+    <main class="container">
+        <form action="cadastro.html" method="post" class="form-control">
+            <div class="div-nome">
+                <label for="Nome">
+                    Nome
+                </label>
+                <input type="nome" name="nome" class="form-control" id="nome" required placeholder="Insira seu nome" />
+            </div>
+            <div class="div-cpf">
+                <label for="Cpf">
+                    CPF
+                </label>
+                <input type="cpf" name="cpf" class="form-control" id="cpf" required placeholder="Insira seu Cpf" />
+            </div>
+            <div class="div-email">
+                <label for="Email">
+                    Email
+                </label>
+                <input type="email" name="email" class="form-control" id="email" required placeholder="Insira seu Email" />
+            </div>
+            <div class="div-telefone">
+                <label for="Telefone">
+                    Telefone
+                </label>
+                <input type="telefone" name="telefone" class="form-control" id="telefone" required
+                    placeholder="Insira seu telefone" />
+            </div>
+            <div class="div-endereço">
+                <label for="Endereço">
+                    Endereço
+                </label>
+                <input type="endereco" name="endereço" class="form-control" id="endereço" required
+                    placeholder="Insira seu Endereço" />
+            </div>
+            <div class="div-cidade">
+                <label for="Cidade">
+                    Cidade
+                </label>
+                <input type="cidade" name="cidade" class="form-control" id="cidade" required
+                    placeholder="Insira seu Cidade" />
+            </div>
+            <div class="div-uf">
+                <label for="Uf">
+                    UF
+                </label>
+                <input type="uf" name="uf" class="form-control" id="uf" required placeholder="Insira seu UF" />
+            </div>
+            <div class="div-cep">
+                <label for="Cep">
+                    Cep
+                </label>
+                <input type="cep" name="cep" class="form-control" id="cep" required placeholder="Insira seu Cep" />
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" onclick="createCliente()"> Cadastra-se </button>
+            </div>
+        </form>
+    </main>    
+</body>
+
+</html>
